@@ -1,0 +1,92 @@
+Atajos de Visual Studio Code:
+Edición de Código:
+Copiar línea hacia abajo: Shift + Alt + ↓
+
+Copiar línea hacia arriba: Shift + Alt + ↑
+
+Mover línea hacia abajo: Alt + ↓
+
+Mover línea hacia arriba: Alt + ↑
+
+Eliminar línea: Ctrl + Shift + K
+
+Deshacer: Ctrl + Z
+
+Rehacer: Ctrl + Y o Ctrl + Shift + Z
+
+Seleccionar todo el texto: Ctrl + A
+
+Buscar: Ctrl + F
+
+Buscar y reemplazar: Ctrl + H
+
+Reemplazar todo: Ctrl + Shift + H
+
+Comentar línea: Ctrl + /
+
+Comentar bloque de código (cuando está seleccionado): Shift + Alt + A
+
+Ir a definición: F12 o Ctrl + clic sobre la función o variable
+
+Ir a archivo: Ctrl + P
+
+Ir a línea: Ctrl + G
+
+Navegación:
+Abrir la paleta de comandos: Ctrl + Shift + P o F1
+
+Ir a la vista de archivos: Ctrl + Shift + E
+
+Cambiar entre pestañas de archivo: Ctrl + Tab
+
+Ir a la línea de código (por número): Ctrl + G
+
+Ver la terminal integrada: Ctrl + Shift + (backtick)
+
+Abrir un nuevo archivo: Ctrl + N
+
+Guardar archivo: Ctrl + S
+
+Cerrar archivo: Ctrl + W
+
+Trabajar con la terminal:
+Abrir la terminal integrada: Ctrl + Shift + (backtick)
+
+Nuevo terminal: Ctrl + Shift + (backtick) y luego Ctrl + Shift + T
+
+Ejecutar comando en terminal: Escribe el comando y presiona Enter.
+
+Cerrar terminal: Ctrl + Shift + W
+
+Control de versión (Git):
+Hacer commit: Ctrl + Shift + G para abrir Git, luego Ctrl + Enter para hacer commit.
+
+Ver cambios de Git: Ctrl + Shift + G
+
+Ver historial de Git: Ctrl + Shift + P luego "Git: View History"
+
+Atajos para Depuración:
+Iniciar depuración: F5
+
+Detener depuración: Shift + F5
+
+Avanzar paso por paso: F10
+
+Entrar en función: F11
+
+Salir de función: Shift + F11
+
+Comandos comunes en terminal para proyectos:
+Crear un nuevo archivo en terminal: touch archivo.js (en Linux/macOS) o echo > archivo.js (en Windows).
+
+Crear un nuevo repositorio Git: git init
+
+Otros comandos útiles:
+
+Ver el estado de Git: git status
+
+Agregar cambios a Git: git add .
+
+Hacer commit: git commit -m "mensaje"
+
+Hacer push a GitHub: git push origin main

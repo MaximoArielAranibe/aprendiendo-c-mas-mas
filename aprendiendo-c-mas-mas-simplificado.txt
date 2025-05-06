@@ -1,0 +1,105 @@
+Guía de C++ para Principiantes – Hecha por Máximo
+
+🛠️ Índice:
+1. ¿Qué es C++?
+2. ¿Qué hace la línea 'int main()'? ¿Qué significa 'return 0'? ¿Y el '#include'?
+3. ¿Qué es 'std' y los operadores '<<' y '>>'?
+4. Tipos de datos (int, float, double, char, string, bool)
+5. Constantes y modificadores
+6. Operadores: suma, resta, multiplicación, división, módulo
+7. Bucles: for, while, do while
+
+🔷 ¿Qué es C++?
+Es un lenguaje de programación de propósito general, muy potente y versátil. Se utiliza para sistemas operativos, videojuegos, software de alto rendimiento y más.
+
+🔷 ¿Qué significa 'int main()'?
+
+int main() {
+    // Código
+    return 0;
+}
+
+- `main()` es el punto de entrada de todo programa en C++.
+- `int` significa que esta función devuelve un número entero.
+- `return 0;` indica que el programa terminó correctamente.
+  También se puede usar `return EXIT_SUCCESS;` o `return EXIT_FAILURE;` (requiere `#include <cstdlib>`).
+
+🔷 ¿Qué significa '#include'?
+
+#include <iostream>
+
+- `#include` le dice al compilador que incluya una librería.
+- `iostream` permite entrada/salida con `cin` y `cout`.
+
+🔷 ¿Qué es 'std'? ¿Y qué hacen '<<' y '>>'?
+
+- `std` es un espacio de nombres que contiene funciones estándar (como `cout`, `cin`).
+- `<<` es el operador de inserción (para salida).
+- `>>` es el operador de extracción (para entrada).
+
+Ejemplos:
+    std::cout << "Hola";  // Muestra "Hola"
+    std::cin >> nombre;   // Guarda lo ingresado en la variable nombre
+
+📌 También podés evitar repetir `std::` usando:
+    using namespace std;  // ⚠️ No recomendado en proyectos grandes.
+
+🔷 Tipos de Datos:
+
+| Tipo     | Descripción                  | Ejemplo              |
+|----------|------------------------------|----------------------|
+| int      | Enteros                      | int edad = 25;       |
+| float    | Decimales (menos preciso)    | float pi = 3.14f;    |
+| double   | Decimales (más preciso)      | double e = 2.71828;  |
+| char     | Un carácter                  | char letra = 'A';    |
+| string   | Texto (requiere <string>)    | string nombre = "Max"; |
+| bool     | Booleano (true/false)        | bool activo = true;  |
+
+🔷 Constantes y Modificadores:
+
+- `const`: Declara una constante.
+    const int numero = 10;
+    numero = 20; // ❌ Error: no se puede modificar
+
+- `unsigned`: Solo valores positivos.
+- `long`, `short`: Cambian el rango de números.
+
+🔷 Operadores aritméticos:
+
+| Operador | Significado     | Ejemplo       | Resultado |
+|----------|------------------|---------------|-----------|
+| +        | Suma              | 2 + 3         | 5         |
+| -        | Resta             | 5 - 2         | 3         |
+| *        | Multiplicación    | 4 * 2         | 8         |
+| /        | División          | 5 / 2         | 2         |
+| %        | Módulo (resto)    | 7 % 3         | 1         |
+
+⚠️ División entre enteros devuelve entero. Usá `float` o `double` para resultado decimal.
+
+🔷 Bucles:
+
+📌 Bucle `for`:
+for (int i = 0; i < 5; i++) {
+    std::cout << i << std::endl;
+}
+
+📌 Bucle `while`:
+int i = 0;
+while (i < 5) {
+    std::cout << i << std::endl;
+    i++;
+}
+
+📌 Bucle `do while`:
+int i = 0;
+do {
+    std::cout << i << std::endl;
+    i++;
+} while (i < 5);
+
+Comparación:
+| Tipo      | Ejecuta al menos una vez | Ideal para...           |
+|-----------|---------------------------|--------------------------|
+| for       | No                        | Contador fijo           |
+| while     | No                        | Condición simple        |
+| do while  | Sí                        | Ejecutar al menos una vez|
