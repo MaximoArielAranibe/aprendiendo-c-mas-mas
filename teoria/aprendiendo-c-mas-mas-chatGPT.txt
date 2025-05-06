@@ -1,0 +1,81 @@
+------------------------------------------------------
+1. Tipos de Datos Primitivos
+------------------------------------------------------
+
+- Enteros:
+  int edad = 22;       // Tipo int
+  short x = 1000;      // Tipo short
+  long y = 1000000;    // Tipo long
+  long long z = 123456789012; // Tipo long long
+  unsigned int a = 100; // Tipo unsigned int
+
+- Caracteres:
+  char letra = 'A';    // Tipo char
+
+- Booleanos:
+  bool vivo = true;    // Tipo bool
+
+- Decimales:
+  float pi = 3.14f;    // Tipo float
+  double e = 2.7182818; // Tipo double
+  long double z2 = 3.14159; // Tipo long double
+
+- Cadenas de texto:
+  string nombre = "Maximo"; // Tipo string
+
+------------------------------------------------------
+2. Operadores y Modificadores de Tipo
+------------------------------------------------------
+
+- Operadores:
+  División: 10 / 3 = 3
+  Módulo: 10 % 3 = 1
+
+- Modificadores de tipo:
+  const int diasEnLaSemana = 7; // Constante
+  unsigned int edad2 = 25; // sin signo
+
+------------------------------------------------------
+3. Bucle While
+------------------------------------------------------
+
+- Un bucle while permite repetir un bloque de código mientras se cumpla una condición.
+  Ejemplo: Mostrar números del 1 al 5.
+
+------------------------------------------------------
+4. Bucle Do-While
+------------------------------------------------------
+
+- Un bucle do-while siempre ejecuta el bloque de código al menos una vez antes de verificar la condición.
+  Ejemplo: Bate la masa hasta que no tenga grumos.
+
+------------------------------------------------------
+5. Bucle For
+------------------------------------------------------
+
+- El bucle for es ideal cuando se conoce de antemano el número de repeticiones.
+  Ejemplo: Mostrar números del 1 al 5 usando un bucle for.
+
+------------------------------------------------------
+6. Ejemplo Interactivo con While
+------------------------------------------------------
+
+- Permite hacer que el programa interactúe con el usuario, solicitando decisiones para continuar o salir.
+  Ejemplo: Preguntar al usuario si desea continuar o no.
+
+------------------------------------------------------
+7. Funciones Matemáticas
+------------------------------------------------------
+
+- Raíz cuadrada: sqrt()
+- Potencia: pow(base, exponente)
+- Valor absoluto: fabs()
+- Seno: sin()
+- Coseno: cos()
+
+------------------------------------------------------
+8. Conclusión y Consejos
+------------------------------------------------------
+
+- Felicitaciones por aprender sobre tipos de datos, operadores, bucles y funciones matemáticas en C++.
+- La práctica es fundamental para mejorar tus habilidades en C++. ¡Sigue experimentando y resolviendo problemas con C++!

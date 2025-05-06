@@ -109,7 +109,7 @@ EJEMPLO:
 const int diasEnLaSemana = 7;
 unsigned int edad = 25;
 
-🧰 4. Otros tipos útiles (más avanzados)
+### 🧰 4. Otros tipos útiles (más avanzados)
 
 | Tipo        | Descripción                           |
 | ----------- | ------------------------------------- |
@@ -150,7 +150,7 @@ Maximo
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-BUCLES:
+### BUCLES:
 
 🔁 ¿Qué es un bucle?
 Un bucle (o loop) permite repetir un bloque de código mientras se cumpla una condición.
@@ -514,7 +514,120 @@ int main() {
 }
 
 ----------------------------------------------------------
- Buenas prácticas
+
+
+### 🔀 ¿Qué es switch en C++?
+El switch es una estructura de control de flujo que permite ejecutar diferentes bloques de código según el valor de una variable. Es muy útil cuando tienes múltiples opciones fijas para evaluar, como menús o respuestas numéricas.
+
+
+switch (expresión) {
+    case valor1:
+        // Código si la expresión == valor1
+        break;
+    case valor2:
+        // Código si la expresión == valor2
+        break;
+    ...
+    default:
+        // Código si no coincide ningún valor
+}
+
+
+expresión: debe ser de tipo int, char o enum. No se puede usar string ni float.
+
+break: detiene el flujo del switch. Si se omite, se ejecutan los siguientes case también (fallthrough).
+
+default: es opcional. Se ejecuta si ningún case coincide.
+
+💡 Ejemplo 1: Menú simple con switch
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int opcion;
+
+    cout << "📋 Menú de opciones:\n";
+    cout << "1. Saludar\n";
+    cout << "2. Mostrar edad\n";
+    cout << "3. Salir\n";
+    cout << "Elige una opción: ";
+    cin >> opcion;
+
+    switch (opcion) {
+        case 1:
+            cout << "👋 ¡Hola, Maximo!" << endl;
+            break;
+        case 2:
+            cout << "🧓 Tenés 22 años." << endl;
+            break;
+        case 3:
+            cout << "🚪 Saliendo del programa..." << endl;
+            break;
+        default:
+            cout << "❌ Opción inválida. Intentá de nuevo." << endl;
+    }
+
+    return 0;
+}
+
+
+🧪 Ejemplo 2: Usando char en un switch
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    char letra;
+
+    cout << "Escribí una letra (a, b o c): ";
+    cin >> letra;
+
+    switch (letra) {
+        case 'a':
+            cout << "Letra A elegida." << endl;
+            break;
+        case 'b':
+            cout << "Letra B elegida." << endl;
+            break;
+        case 'c':
+            cout << "Letra C elegida." << endl;
+            break;
+        default:
+            cout << "Letra no reconocida." << endl;
+    }
+
+    return 0;
+}
+
+
+⚠️ Importante: Qué pasa si no usás break
+
+
+int numero = 2;
+
+switch (numero) {
+    case 1:
+        cout << "Uno\n";
+    case 2:
+        cout << "Dos\n";
+    case 3:
+        cout << "Tres\n";
+    default:
+        cout << "Otra opción\n";
+}
+
+🔴 Esto imprime:
+
+Dos
+Tres
+Otra opción
+
+¿Por qué? Porque no hay break, así que una vez que entra en un case, sigue ejecutando los siguientes (fallthrough). Usá break para evitarlo.
+
+----------------------------------------------------------
+
+## Buenas prácticas
 
 ✅ Nombrar variables con significado
 ✅ Indentar correctamente

@@ -2,7 +2,6 @@ DOCUMENTACIÓN OFICIAL C++: https://learn.microsoft.com/es-es/cpp/cpp/?view=msvc
 
 // En C++, la función main() se declara con un tipo de retorno int porque así lo establece el estándar del lenguaje. El valor entero que retorna main se utiliza para indicar el resultado del programa al sistema operativo o entorno que lo ejecuta.
 
-
 ¿Por qué int?
 El valor de retorno de main() le dice al sistema operativo si el programa terminó correctamente o con errores. Esta es la convención:
 
@@ -467,3 +466,60 @@ Entrada y salida de datos con cin y cout.
 5 x 3 = 15
 ...
 5 x 10 = 50
+
+EXPLICACION EJERCICIO 3: QUE HACE EL FOR()?
+https://chatgpt.com/share/68194647-0094-8003-875e-e0c20eaac857
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int numero;
+
+  // 1. Solicitar al usuario que ingrese un número
+  cout << "Ingresar un número: ";
+  cin >> numero;
+
+  // 2. Verificar si el número es impar
+  if (numero % 2 != 0) {
+    // Si el número es impar, se imprimen los números correlativos
+    // desde el número ingresado hasta el doble de ese número.
+    for (int i = numero; i <= numero * 2; i++) {
+      cout << i << " ";  // Imprimir el valor de 'i' seguido de un espacio
+    }
+  }
+  else {
+    // Si el número es par, se imprimen solo los números pares
+    // desde el número ingresado hasta el doble de ese número.
+    for (int i = numero; i <= numero * 2; i += 2) {
+      cout << i << " ";  // Imprimir el valor de 'i' seguido de un espacio
+    }
+  }
+
+  // 3. Salto de línea para mejorar la salida
+  cout << endl;
+
+  // 4. Pausar el programa (solo en Windows)
+  system("pause");
+
+  return 0;  // Finaliza la ejecución del programa
+}
+
+----------------------------------------------------------
+ Buenas prácticas
+
+✅ Nombrar variables con significado
+✅ Indentar correctamente
+✅ Comentar tu código
+✅ Escribir código limpio y modular
+✅ No repetir código: usar funciones
+✅ Evitar nombres como x, y si no es necesario
+
+📘 ¿Cómo seguir practicando?
+Escribir pequeños programas: calculadora, conversor de unidades, etc.
+
+Hacer ejercicios de lógica con bucles y condiciones.
+
+Leer código ajeno y tratar de entenderlo.
+
+Usar plataformas como HackerRank o Codeforces (modo principiante).
