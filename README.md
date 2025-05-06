@@ -1,36 +1,39 @@
-DOCUMENTACIÓN OFICIAL C++: https://learn.microsoft.com/es-es/cpp/cpp/?view=msvc-170
+# DOCUMENTACIÓN OFICIAL C++
+🔗 [Documentación oficial de C++](https://learn.microsoft.com/es-es/cpp/cpp/?view=msvc-170)
 
-// En C++, la función main() se declara con un tipo de retorno int porque así lo establece el estándar del lenguaje. El valor entero que retorna main se utiliza para indicar el resultado del programa al sistema operativo o entorno que lo ejecuta.
+## Función main()
+- En C++, la función `main()` se declara con un tipo de retorno `int` porque así lo establece el estándar del lenguaje.
+- El valor entero que retorna `main` se utiliza para indicar el resultado del programa al sistema operativo.
 
-¿Por qué int?
-El valor de retorno de main() le dice al sistema operativo si el programa terminó correctamente o con errores. Esta es la convención:
+### ¿Por qué int?
+El valor de retorno de `main()` indica al sistema operativo si el programa terminó correctamente:
 
-return 0; → El programa terminó correctamente.
+- `return 0;` → El programa terminó correctamente.
+- `return 1;` (o cualquier valor ≠ 0) → Ocurrió algún error.
 
-return 1; o cualquier otro valor distinto de 0 → Ocurrió algún error o finalización anormal.
+## Espacio de nombres std
+Antes de sumergirnos en las funcionalidades del espacio de nombres `std`, es esencial comprender su definición.
 
+- **STD** en C++ se refiere a "Standard".
+- Este espacio de nombres encapsula elementos fundamentales del estándar del lenguaje.
+- Evita conflictos de nombres, facilitando la integración de bibliotecas.
 
-Antes de sumergirnos en las profundidades de las funcionalidades del espacio de nombres std, es esencial comprender su definición.
+### Componentes clave:
+- `cout` = **Console Output** (salida en consola)
+- `cin` = **Console Input** (entrada desde consola)
 
-STD en C++ se refiere a "Standard," y este espacio de nombres encapsula una variedad de elementos fundamentales que forman parte del estándar del lenguaje.
+---
 
-Este componente esencial evita conflictos de nombres, facilitando la integración de diversas bibliotecas y el desarrollo de código limpio y organizado.
+## Operadores básicos
 
-cout = significa Console Output, C de console y out de output, seria como salida en consola
-cin = significa Console Input, C de console y in de input.
-
---------------------------------------------------------------------
+### Operador `<<`
+En C++, el operador `<<` tiene dos usos principales:
 
 << : Operador de inserción
 
-En C++, el operador << tiene dos usos principales dependiendo del contexto:
-
-✅ 1. Con std::cout → Operador de salida (output)
-Este es el uso más común para principiantes. Se llama operador de inserción porque "inserta" datos en la consola.
-
+✅ **1. Con std::cout** → Operador de salida (output)
 Ejemplo:
-
-
+```cpp
 std::cout << "Hola mundo" << std::endl;
 
 "Hola mundo" se inserta en la salida estándar (la consola).
@@ -45,6 +48,11 @@ std::cout << "El resultado es: " << 42 << std::endl;
 | `x << y`       | Desplazar bits a la izquierda | Bajo nivel / bits |
 
 --------------------------------------------------------------------------------------------------------------------------
+
+✅ 2. Operador de desplazamiento de bits
+Ejemplo:
+
+int x = 5 << 2; // Desplaza bits de 5 a la izquierd
 
 🧠 1. Tipos de datos primitivos
 
