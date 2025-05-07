@@ -506,6 +506,95 @@ int main() {
 }
 
 ----------------------------------------------------------
+
+🧮 Operaciones básicas (desde <iostream> y <string>)
+
+
+std::cout / std::cin
+Entrada y salida estándar.
+
+EJEMPLO:
+ _______________________________
+|   std::cout << "Hola Mundo";  |
+|   int x;                      |
+|   std::cin >> x;              |
+
+
+
+std::getline(std::cin, variable)
+Lee una línea completa de texto.
+
+EJEMPLO:
+ ___________________________________________
+|       std::string nombre;                 |
+|       std::getline(std::cin, nombre);     |
+
+
+
+📚 Manejo de strings (<string>)
+
+    std::string
+    Tipo de dato para texto con funciones útiles como:
+
+        .length()
+
+        .substr()
+
+        .find()
+
+        .append()
+
+EJEMPLO:
+ ___________________________________________
+|        std::string saludo = "Hola";       |
+|        saludo.append(" Mundo");           |
+
+
+🧠 Funciones útiles
+    Convierte números a texto.
+    std::to_string()
+
+        std::string texto = std::to_string(123);
+
+
+
+std::stoi() / std::stod()
+    Convierte texto a número.
+
+    EJEMPLO:
+    int n = std::stoi("123");
+
+
+Para convertir texto a mayúsculas, minúsculas y hacer otras transformaciones en C++, se usan funciones de la librería <cctype> combinadas con un bucle.
+
+📚 Librería que necesitás
+#include <cctype>   // para toupper, tolower, etc.
+#include <string>   // para std::string
+
+
+🔠 Convertir a mayúsculas
+
+std::string texto = "hola mundo";
+
+for (char &c : texto) {
+    c = std::toupper(c);  // convierte cada caracter a mayúscula
+}
+
+// texto ahora es "HOLA MUNDO"
+
+
+🔡 Convertir a minúsculas
+
+std::string texto = "Hola Mundo";
+
+for (char &c : texto) {
+    c = std::tolower(c);  // convierte cada caracter a minúscula
+}
+
+// texto ahora es "hola mundo"
+
+
+----------------------------------------------------------
  Buenas prácticas
 
 ✅ Nombrar variables con significado
